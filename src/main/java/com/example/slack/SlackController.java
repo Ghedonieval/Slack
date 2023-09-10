@@ -28,8 +28,8 @@ public class SlackController {
             String currentUtcTime = OffsetDateTime.now(ZoneOffset.UTC).minusMinutes(2).format(formatter);
 
             // GitHub URLs
-            String githubFileUrl = "https://github.com/username/repo/blob/main/file_name.ext";
-            String githubRepoUrl = "https://github.com/username/repo";
+            String githubFileUrl = "https://github.com/Ghedonieval/Slack/tree/main/src/main/java/com/example/slack";
+            String githubRepoUrl = "https://github.com/Ghedonieval/Slack";
 
             return new SlackModel(slack_name, currentDay, currentUtcTime, track, githubFileUrl, githubRepoUrl, 200);
         }
