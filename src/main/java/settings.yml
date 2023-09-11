@@ -1,4 +1,4 @@
 services:
-  - name: slack 1
+  - name: slack1
     env: node
     startCommand: slack1 start
