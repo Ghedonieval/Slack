@@ -3,49 +3,49 @@ package com.example.slack;
 import java.util.Objects;
 
 public class SlackModel {
-    private String slackName;
-    private String currentDayOfWeek;
-    private String currentUtcTime;
+    private String slack_name;
+    private String current_day;
+    private String utc_time;
     private String track;
-    private String githubFileUrl;
-    private String githubSourceUrl;
-    private int statusCode;
+    private String github_file_url;
+    private String github_repo_url;
+    private int status_code;
 
     public SlackModel() {
     }
 
-    public SlackModel(String slackName, String currentDayOfWeek, String currentUtcTime, String track, String githubFileUrl, String githubSourceUrl, int statusCode) {
-        this.slackName = slackName;
-        this.currentDayOfWeek = currentDayOfWeek;
-        this.currentUtcTime = currentUtcTime;
+    public SlackModel(String slack_name, String current_day, String utc_time, String track, String github_file_url, String github_repo_url, int status_code) {
+        this.slack_name = slack_name;
+        this.current_day = current_day;
+        this.utc_time = utc_time;
         this.track = track;
-        this.githubFileUrl = githubFileUrl;
-        this.githubSourceUrl = githubSourceUrl;
-        this.statusCode = statusCode;
+        this.github_file_url = github_file_url;
+        this.github_repo_url = github_repo_url;
+        this.status_code = status_code;
     }
 
-    public String getSlackName() {
-        return slackName;
+    public String getSlack_name() {
+        return slack_name;
     }
 
-    public void setSlackName(String slackName) {
-        this.slackName = slackName;
+    public void setSlack_name(String slack_name) {
+        this.slack_name = slack_name;
     }
 
-    public String getCurrentDayOfWeek() {
-        return currentDayOfWeek;
+    public String getCurrent_day() {
+        return current_day;
     }
 
-    public void setCurrentDayOfWeek(String currentDayOfWeek) {
-        this.currentDayOfWeek = currentDayOfWeek;
+    public void setCurrent_day(String current_day) {
+        this.current_day = current_day;
     }
 
-    public String getCurrentUtcTime() {
-        return currentUtcTime;
+    public String getUtc_time() {
+        return utc_time;
     }
 
-    public void setCurrentUtcTime(String currentUtcTime) {
-        this.currentUtcTime = currentUtcTime;
+    public void setUtc_time(String utc_time) {
+        this.utc_time = utc_time;
     }
 
     public String getTrack() {
@@ -56,28 +56,28 @@ public class SlackModel {
         this.track = track;
     }
 
-    public String getGithubFileUrl() {
-        return githubFileUrl;
+    public String getGithub_file_url() {
+        return github_file_url;
     }
 
-    public void setGithubFileUrl(String githubFileUrl) {
-        this.githubFileUrl = githubFileUrl;
+    public void setGithub_file_url(String github_file_url) {
+        this.github_file_url = github_file_url;
     }
 
-    public String getGithubSourceUrl() {
-        return githubSourceUrl;
+    public String getGithub_repo_url() {
+        return github_repo_url;
     }
 
-    public void setGithubSourceUrl(String githubSourceUrl) {
-        this.githubSourceUrl = githubSourceUrl;
+    public void setGithub_repo_url(String github_repo_url) {
+        this.github_repo_url = github_repo_url;
     }
 
-    public int getStatusCode() {
-        return statusCode;
+    public int getStatus_code() {
+        return status_code;
     }
 
-    public void setStatusCode(int statusCode) {
-        this.statusCode = statusCode;
+    public void setStatus_code(int status_code) {
+        this.status_code = status_code;
     }
 
     @Override
@@ -85,24 +85,24 @@ public class SlackModel {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         SlackModel that = (SlackModel) o;
-        return statusCode == that.statusCode && Objects.equals(slackName, that.slackName) && Objects.equals(currentDayOfWeek, that.currentDayOfWeek) && Objects.equals(currentUtcTime, that.currentUtcTime) && Objects.equals(track, that.track) && Objects.equals(githubFileUrl, that.githubFileUrl) && Objects.equals(githubSourceUrl, that.githubSourceUrl);
+        return status_code == that.status_code && Objects.equals(slack_name, that.slack_name) && Objects.equals(current_day, that.current_day) && Objects.equals(utc_time, that.utc_time) && Objects.equals(track, that.track) && Objects.equals(github_file_url, that.github_file_url) && Objects.equals(github_repo_url, that.github_repo_url);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(slackName, currentDayOfWeek, currentUtcTime, track, githubFileUrl, githubSourceUrl, statusCode);
+        return Objects.hash(slack_name, current_day, utc_time, track, github_file_url, github_repo_url, status_code);
     }
 
     @Override
     public String toString() {
         return "SlackModel{" +
-                "slackName='" + slackName + '\'' +
-                ", currentDayOfWeek='" + currentDayOfWeek + '\'' +
-                ", currentUtcTime='" + currentUtcTime + '\'' +
+                "slack_name='" + slack_name + '\'' +
+                ", current_day='" + current_day + '\'' +
+                ", utc_time='" + utc_time + '\'' +
                 ", track='" + track + '\'' +
-                ", githubFileUrl='" + githubFileUrl + '\'' +
-                ", githubSourceUrl='" + githubSourceUrl + '\'' +
-                ", statusCode=" + statusCode +
+                ", github_file_url='" + github_file_url + '\'' +
+                ", github_repo_url='" + github_repo_url + '\'' +
+                ", status_code=" + status_code +
                 '}';
     }
 }
