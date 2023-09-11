@@ -10,10 +10,10 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 
 @RestController
-//@RequestMapping("/api/slack")
+@RequestMapping("/api/slack")
 public class SlackController {
 
-        @GetMapping("/api")
+        @GetMapping("/info")
         public SlackModel getInfo(@RequestParam("slack_name") String slack_name, @RequestParam("track") String track) {
             // Validate input parameters
             if (slack_name == null || track == null) {
