@@ -1,4 +1,4 @@
-package com.example.slack;
+package com.example.slack.entity;
 
 import java.util.Objects;
 
